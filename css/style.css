@@ -1,0 +1,59 @@
+header{
+	background-color: #171717;
+	color:#bababa;
+	overflow: hidden;
+	padding: 20px;
+}
+
+h1{
+	margin:0;
+}
+
+body{
+
+	font-family: arial;
+	font-size: 14px;
+	margin:0;
+	background-color: white;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+
+header a {
+	color:#bababa;
+	display: block;
+	padding: 5px;
+}
+header a:hover {
+	background-color: #bababa;
+	color:#171717;
+}
+header h1 {
+	margin:0;
+	color:#bababa;
+	float: left;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	padding-left: 75px;
+}
+header ul {
+	padding: 0;
+	margin:0;
+	text-align: right;
+}
+/*header img{
+	float:left;
+	padding:2px;
+}*/
+header ul li{
+	display: inline-block;/*esta propiedad junta las dos mejores propiedades de inline y block, muestra una caja al lado de la otra*/
+}
+
+header nav{
+	float: right;
+}
+footer{
+	background-color: black;
+}

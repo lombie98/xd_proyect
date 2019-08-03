@@ -57,3 +57,49 @@ header nav{
 footer{
 	background-color: black;
 }
+
+img{
+	display: block;
+	width: 100%;
+}
+#noticia-destacada{
+	width: calc(100vw *3);
+	overflow: hidden;
+	background-color: #171717;
+	position: relative;
+	animation: 15s slider infinite;/*tiempo | nombre del animacion que quiero usar (keyframes) | como quiero que se repita*/
+}
+#noticia-destacada figure{
+	width: 100vw;
+	float: left;
+}
+#noticia-destacada h2{
+font-size:42px;
+font-weight: 600;
+background-color: #171717;
+padding: 15px;
+color: #fff;
+}
+
+/*animaciones css*/
+@keyframes slider{
+	0%{
+		left:0;
+	}
+	20%{
+		left: 0;
+	}
+	40%{
+		left: -100vw;
+	}
+	60%{
+		left:-100vw;
+	}
+	80%{
+		left:-200vw;
+	}
+	100%{
+		left:0;
+	}
+
+}

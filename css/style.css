@@ -36,7 +36,10 @@ header h1 {
 	float: left;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
+	background-size:contain;
 	padding-left: 75px;
+	font-weight: 700;
+	font-size: 28px;
 }
 header ul {
 	padding: 0;

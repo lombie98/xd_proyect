@@ -1,7 +1,7 @@
 header{
 	background-color: #171717;
 	color:#bababa;
-	overflow: hidden;
+	overflow-x: hidden;
 	padding: 20px;
 }
 
@@ -10,6 +10,7 @@ h1{
 }
 
 body{
+	overflow-x: hidden;
 
 	font-family: arial;
 	font-size: 14px;
@@ -44,7 +45,7 @@ header h1 {
 header ul {
 	padding: 0;
 	margin:0;
-	text-align: right;
+	
 }
 /*header img{
 	float:left;
@@ -84,6 +85,39 @@ padding: 15px;
 color: #fff;
 }
 
+.noticias{
+padding: 25px;
+display: inline-block;
+width: 300px;
+
+}
+.noticia-img{
+	width: 25vw;
+	margin-left: 60px;
+}
+.noticia-txt {
+	padding-left: 15px;
+	float: right;
+	display: block;
+width: 50vw;
+
+}
+
+.noticia-txt h3{
+font-weight: 800;
+font-size: 20px;
+margin:20px;
+
+
+}
+
+.noticia-txt p{
+	margin: 25px;
+}
+
+hr{
+	width: 90%;
+}
 
 /*animaciones css*/
 @keyframes slider{

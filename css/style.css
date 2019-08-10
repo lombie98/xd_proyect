@@ -1,7 +1,7 @@
 header{
 	background-color: #171717;
 	color:#bababa;
-	overflow: hidden;
+	overflow-x: hidden;
 	padding: 20px;
 }
 
@@ -10,6 +10,7 @@ h1{
 }
 
 body{
+	overflow-x: hidden;
 
 	font-family: arial;
 	font-size: 14px;
@@ -44,7 +45,7 @@ header h1 {
 header ul {
 	padding: 0;
 	margin:0;
-	text-align: right;
+	
 }
 /*header img{
 	float:left;
@@ -84,6 +85,42 @@ padding: 15px;
 color: #fff;
 }
 
+.noticias{/*Contenedor flexible*/
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;/* flex-start/center/flex-end/space-arround/space-between/space-evenly*/
+	align-items: center;
+/*padding: 25px;
+overflow: hidden;*/
+}
+.noticia-img{/*item flexible*/
+	width: 25%;
+	/*float:left;
+	width: 30%;*/
+
+}
+.noticia-txt {/*item flexible*/
+	width: 65%;
+	/*float: right;
+	width: 70%*/
+
+}
+
+/*.noticia-txt h3{
+font-weight: 1000;
+font-size: 25px;
+margin:20px;
+
+
+}
+
+.noticia-txt {
+
+}
+*/
+hr{
+	width: 90%;
+}
 
 /*animaciones css*/
 @keyframes slider{

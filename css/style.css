@@ -1,10 +1,3 @@
-
-	header{
-		background-color: #171717;
-		color:#bababa;
-		overflow-x: hidden;
-		padding: 20px;
-	}
 	.desktop{
 		display: hidden;
 	}
@@ -31,12 +24,6 @@
 	}
 
 
-	header{
-		background-color: #171717;
-		color:#bababa;
-		overflow-x: hidden;
-		padding: 20px;	
-	}
 
 	h1{
 		margin:0;
@@ -55,7 +42,7 @@
 		color:black;
 	}
 
-	header a {
+	/*header a {
 		color:#bababa;
 		display: block;
 		padding: 5px;
@@ -83,10 +70,11 @@
 	header ul li{
 		display: inline-block;/*esta propiedad junta las dos mejores propiedades de inline y block, muestra una caja al lado de la otra*/
 	}
-
+/*
 	header nav{
 		float: right;
-	}
+	}*/
+
 	footer{
 		background-color: black;
 	}

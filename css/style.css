@@ -1,184 +1,207 @@
-header{
-	background-color: #171717;
-	color:#bababa;
-	overflow-x: hidden;
-	padding: 20px;
-}
 
-h1{
-	margin:0;
-}
-
-body{
-	overflow-x: hidden;
-
-	font-family: arial;
-	font-size: 14px;
-	margin:0;
-	background-color: white;
-}
-a{
-	text-decoration:none;
-	color:black;
-}
-
-header a {
-	color:#bababa;
-	display: block;
-	padding: 5px;
-}
-header a:hover {
-	background-color: #bababa;
-	color:#171717;
-}
-header h1 {
-	margin:0;
-	color:#bababa;
-	float: left;
-	background-image: url(../img/logo.png);
-	background-repeat: no-repeat;
-	background-size:contain;
-	padding-left: 75px;
-	font-weight: 700;
-	font-size: 28px;
-}
-header ul {
-	padding: 0;
-	margin:0;
-	
-}
-/*header img{
-	float:left;
-	padding:2px;
-}*/
-header ul li{
-	display: inline-block;/*esta propiedad junta las dos mejores propiedades de inline y block, muestra una caja al lado de la otra*/
-}
-
-header nav{
-	float: right;
-}
-footer{
-	background-color: black;
-}
-
-img{
-	display: block;
-	width: 100%;
-}
-#noticia-destacada{
-	width: calc(100vw *3);
-	overflow: hidden;
-	background-color: #171717;
-	position: relative;
-	animation: 15s slider infinite;/*tiempo | nombre del animacion que quiero usar (keyframes) | como quiero que se repita*/
-}
-#noticia-destacada figure{
-	width: 100vw;
-	float: left;
-}
-#noticia-destacada h2{
-font-size:42px;
-font-weight: 600;
-background-color: #171717;
-padding: 15px;
-color: #fff;
-}
-
-
-.noticias{/*Contenedor flexible*/
-	display:flex;
-	flex-direction: row;
-	justify-content: space-evenly;/* flex-start/center/flex-end/space-arround/space-between/space-evenly*/
-	align-items: center;
-	border-bottom: solid 1px #cccccc;
-	margin-left:15px;
-	margin-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-/*padding: 25px;
-overflow: hidden;*/
-}
-.noticia-img{/*item flexible*/
-	width: 25%;
-
-	/*float:left;
-	width: 30%;*/
-
-}
-.noticia-txt {/*item flexible*/
-	width: 65%;
-	line-height: 1.5;
-	/*float: right;
-	width: 70%*/
-
-}
-
-.noticia-txt h3{
-font-weight: 800;
-font-size: 20px;}
-
-.noticia-txt a{
-	font-weight: 600;
-}
-
-.noticias:last-child {
-	border-bottom: none;
-}
-
-#tabla-posiciones table{
-	width: 80%;
-	margin:auto;
-}
-#tabla-posiciones td, #tabla-posiciones th{
-	padding: 15px;
-}
-
-#tabla-posiciones th{
-	font-weight: 800;
-	color:white;
-	background-color: red;
-	font-size: 20px;
-}
-#tabla-posiciones tr{
-	background-color: #d9d9d9;
-	border-top: solid 1px #cccccc;
-}
-#tabla-posiciones tr:last-child{
-	border-bottom:  none;
-}
-
-#tabla-posiciones td{
-	vertical-align: middle;
-}
-#tabla-posiciones td:nth-child(odd){
-text-align: center;
-font-size:18px;
-font-weight: 500;
-}
-#tabla-posiciones span{
-	color:#009a8a;
-	font-weight: 600;
-}
-/*animaciones css*/
-@keyframes slider{
-	0%{
-		left:0;
+	header{
+		background-color: #171717;
+		color:#bababa;
+		overflow-x: hidden;
+		padding: 20px;
 	}
-	20%{
-		left: 0;
-	}
-	40%{
-		left: -100vw;
-	}
-	60%{
-		left:-100vw;
-	}
-	80%{
-		left:-200vw;
-	}
-	100%{
-		left:0;
+	.desktop{
+		display: hidden;
 	}
 
-}
+
+
+	.fa-1x {
+	font-size: 1.5rem;
+	}
+	.navbar-toggler.toggler-example {
+	cursor: pointer;
+	}
+	.dark-blue-text {
+	color: #0A38F5;
+	}
+	.dark-pink-text {
+	color: #AC003A;
+	}
+	.dark-amber-text {
+	color: #ff6f00;
+	}
+	.dark-teal-text {
+	color: #004d40;
+	}
+
+
+	header{
+		background-color: #171717;
+		color:#bababa;
+		overflow-x: hidden;
+		padding: 20px;	
+	}
+
+	h1{
+		margin:0;
+	}
+
+	body{
+		overflow-x: hidden;
+
+		font-family: arial;
+		font-size: 14px;
+		margin:0;
+		background-color: white;
+	}
+	a{
+		text-decoration:none;
+		color:black;
+	}
+
+	header a {
+		color:#bababa;
+		display: block;
+		padding: 5px;
+	}
+	header a:hover {
+		background-color: #bababa;
+		color:#171717;
+	}
+	header h1 {
+		margin:0;
+		color:#bababa;
+		float: left;
+		background-image: url(../img/logo.png);
+		background-repeat: no-repeat;
+		background-size:contain;
+		padding-left: 75px;
+		font-weight: 700;
+		font-size: 28px;
+	}
+
+	header ul {
+		padding: 0;
+		margin:0;}
+
+	header ul li{
+		display: inline-block;/*esta propiedad junta las dos mejores propiedades de inline y block, muestra una caja al lado de la otra*/
+	}
+
+	header nav{
+		float: right;
+	}
+	footer{
+		background-color: black;
+	}
+
+	img{
+		display: block;
+		width: 100%;
+	}
+	#noticia-destacada{
+		width: calc(100vw *3);
+		overflow: hidden;
+		background-color: #171717;
+		position: relative;
+		animation: 15s slider infinite;/*tiempo | nombre del animacion que quiero usar (keyframes) | como quiero que se repita*/
+	}
+	#noticia-destacada figure{
+		width: 100vw;
+		float: left;
+	}
+	#noticia-destacada h2{
+		font-size:42px;
+		font-weight: 600;
+		background-color: #171717;
+		padding: 15px;
+		color: #fff;
+	}
+
+	.noticias{/*Contenedor flexible*/
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;/* flex-start/center/flex-end/space-arround/space-between/space-evenly*/
+		align-items: center;
+		border-bottom: solid 1px #cccccc;
+		margin-left:15px;
+		margin-right: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.noticia-img{/*item flexible*/
+		width: 25%;	}
+
+	.noticia-txt {/*item flexible*/
+		width: 65%;
+		line-height: 1.5;
+
+	}
+
+	.noticia-txt h3 {
+		font-weight: 800;
+		font-size: 20px;
+					}
+
+	.noticia-txt a{
+		font-weight: 600;
+	}
+
+	.noticias:last-child {
+		border-bottom: none;
+	}
+
+	#tabla-posiciones table{
+		width: 80%;
+		margin:auto;
+	}
+	#tabla-posiciones td, #tabla-posiciones th{
+		padding: 15px;
+	}
+
+	#tabla-posiciones th{
+		font-weight: 800;
+		color:white;
+		background-color: red;
+		font-size: 20px;
+	}
+
+	#tabla-posiciones tr{
+		background-color: #d9d9d9;
+		border-top: solid 1px #cccccc;
+	}
+
+	#tabla-posiciones tr:last-child{
+		border-bottom:  none;
+	}
+
+	#tabla-posiciones td{
+		vertical-align: middle;
+	}
+	#tabla-posiciones td:nth-child(odd) {
+		text-align: center;
+		font-size:18px;
+		font-weight: 500;
+	}
+	#tabla-posiciones span{
+		color:#009a8a;
+		font-weight: 600;
+	}
+	/*animaciones css*/
+	@keyframes slider{
+		0%{
+			left:0;
+		}
+		20%{
+			left: 0;
+		}
+		40%{
+			left: -100vw;
+		}
+		60%{
+			left:-100vw;
+		}
+		80%{
+			left:-200vw;
+		}
+		100%{
+			left:0;
+		}
+
+	}

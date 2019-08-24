@@ -5,9 +5,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>DX | DesporteXtremo</title>
-	 <link rel="stylesheet" href="css/reset.css">
+	<!--<link rel="stylesheet" href="css/reset.css">-->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-</head>
 <body>
 <!--document -->
 <header>
@@ -16,7 +17,7 @@
 	<h1>DeporteXtremos</h1>
 
 	<!-- ↓ Menu ↓ -->
-	<nav>
+	<nav id="desktop">
 		<ul>
 			<li><a href="#">Fútbol</a></li>
 			<li><a href="#">NBA</a></li>
@@ -27,6 +28,37 @@
 			<li><a href="#">Moto GP</a></li>
 		</ul>
 	</nav>
+
+	<!--Navbar-->
+	<nav id="burger" >
+
+	  <!-- Collapse button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+	    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+	        class="fas fa-bars fa-1x"></i></span></button>
+
+	  <!-- Collapsible content -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+	    <!-- Links -->
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Features</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Pricing</a>
+	      </li>
+	    </ul>
+	    <!-- Links -->
+
+	  </div>
+	  <!-- Collapsible content -->
+
+	</nav>
+<!--/.Navbar-->
 </header>
 <main>
 	<section id="noticia-destacada">
@@ -52,13 +84,13 @@
         </figure>
 	</section>
 <!-- ultimas noticias-->
-	<section id="ultimas-noticias">
-		<article class="noticias">
+	<section id="ultimas-noticias" class="container-fluid">
+		<article class="noticias row">
 
-			<div class="noticia-img">
+			<div class="col-12 col-sm-4">
 				<img src="img/sorteo-libertadores.jpg">
 			</div>
-			<div class="noticia-txt">
+			<div class="col-12 col-sm-8">
 				<h3><a href="#">La tecnología llega a la actual edición de la Libertadores</a> </h3>
 
 				<p>por <a href="#"> Joaquín Angeli </a></p>
@@ -67,11 +99,11 @@
 
 		</article>
 	
-		<article class="noticias">
-			<div class="noticia-img">
+		<article class="noticias row">
+			<div class="col-12 col-sm-4">
 				<img src="img/tickets-rusia-mundial.jpg">
 			</div>
-			<div class="noticia-txt">
+			<div class="col-12 col-sm-8">
 				<h3><a href="#">Comenzó la venta de entradas para el Mundial de Rusia 2018 </a></h3>
 
 				<p>por <a href="#"> Laura Smasnatta</a></p>
@@ -79,22 +111,22 @@
 			</div>
 		</article>
 	
-		<article class="noticias">
-			<div class="noticia-img">
+		<article class="noticias row">
+			<div class="col-12 col-sm-4">
 				<img src="img/Firpo.jpg">
 			</div>
-			<div class="noticia-txt">
+			<div class="col-12 col-sm-8">
 				<h3><a href="#">A 94 años del derechazo que convirtió en leyenda a Luis Ángel Firpo</h3>
 				<p>por <a href="#"> Diego Di Marco </a>></p>
 				<p> El 14/9/1923 el boxeador argentino enfrento en Nueva York a Jack Dempsey, uno de los mejores pesos pesados de la historia.</p>
 			</div>
 		</article>
 	
-		<article class="noticias">
-			<div class="noticia-img">
+		<article class="noticias row">
+			<div class="col-12 col-sm-4">
 				<img src="img/buenos-aires.jpg">
 			</div>
-			<div class="noticia-txt">
+			<div class="col-12 col-sm-8">
 				<h3><a href="#">Buenos Aires 2018 presentó su innovador proyecto de parques y de ceremonia inaugural ante el COI </h3>
 
 				<p>por <a href="#"> Melina Morales </p>
@@ -135,5 +167,8 @@
 	
 <!--JS-->
 <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -36,11 +36,54 @@
 			<p>Mostrar un mensaje en el <code>&lt;article&gt;</code> que indique el cuanto valen y cuantas unidades hay de ese producto.</p>
 			<article>
 
+
 			</article>
 		</aside>
 
 		<script>
-		
+		 /*var nombre = "cafe"
+				var stock = 600
+				var precio = 95.65
+				var disponible = true*/
+
+				var nombre =prompt ("ingrese nombre")
+				
+				
+				
+
+				while(nombre == "" || nombre ==null||nombre == undefined )
+				{
+					alert ("error, escribi algo boludo ")
+					nombre =prompt ("ingrese nombre")
+				}
+
+				var stock =prompt ("cuanto hay de stock")
+				if(stock == "" || stock > 0 || stock < 1000)
+				{
+					alert ("error, escribi algo boludo ")
+					stock =prompt ("ingrese stock")
+				}
+
+				var precio = prompt ("ingrese precio")
+				if(precio == "" )
+				{
+					alert ("error, escribi algo boludo ")
+					precio =prompt ("ingrese precio")
+				}
+
+				var disponibilidad = confirm("hay disponibilidad?")
+				if(disponibilidad == undefined )
+				{
+					alert ("error, escribi algo boludo ")
+					disponibilidad =prompt ("ingrese disponibilidad")
+				}
+
+				//var mensaje = "hay" + stock +"unidades de" + nombre+ "que vale" + precio
+				var mensaje =`hay ${stock} unid, de <strong>${nombre}</strong> que valen arg ${precio} c/u`
+				console.log(mensaje)
+
+				//document.querySelector("article").innerText = mensaje
+				document.querySelector("article").innerHTML = mensaje
 		</script>
 	</body>
 </html>

@@ -28,11 +28,27 @@
 		</aside>
 
 		<script>
-			/* 1) Seleccionar el h1 y guardarlo en una variable */
+			
+			/* MANIPOLUCION DE COMPORTAMIENTO  */
+			var titulo1= document.querySelector("h1")
+			setTimeout(modificarTitulo, 3000)
+			titulo1.onclick = modificarTitulo
 
+			function modificarTitulo(){
+				/* 1) Seleccionar el h1 y guardarlo en una variable */
+			
+			/* MANIPuLACION DE CONTENIDO*/
 			/* 2) Modificar el texto interno de esta variable */
+			titulo1.innerText = "tu vieja"
 
+			/* MANIPULACION DE ESTRUCTURAS*/
+			titulo1.style.color ="green"
+			titulo1.classList.add ("alerta")
+			titulo1.id ="gatoo"
+
+			}
 			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
+
 		</script>
 	</body>
 </html>

@@ -33,11 +33,13 @@
 		<script>
 			function calcularIVA(){
 				/* 1) seleccionar el campo numérico y guardarlo en una variable */
-
+				var pepe = document.queryselector ("#precio")
 				/* 2) obtener el valor del campo */
-
+				var dato =pepe.value
 				/* 3) escribir en el span el valor del campo + IVA */
+				document.querySelector (".total").innerText = dato * 1.21
 			}
+
 		</script>
 	</body>
 </html>

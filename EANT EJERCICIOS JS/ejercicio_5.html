@@ -33,11 +33,22 @@
 
 		<script>
 			/* 1) Seleccionar los campos por nombre utilizando la sintaxis CSS */
-			
+			almendra =document.querySelector("input[name='email']")
+			avellana =document.querySelector("input[name='email2']")
 			/* 2) Asignar la funcion validarEmail al evento correspondiente */
-
+			avellana.onkeyup= validarEmail
 			function validarEmail(){
 				/* 3) Si coinciden los valores, asignar la clase "ok", Sino... asignar la clase "error" */
+				if (avellana.value==almendra.value)
+				{
+					avellana.classList.remove("error")	
+					avellana.classList.add("ok")
+				}
+				else
+				{
+					avellana.classList.remove("ok")
+					avellana.classList.add("error")
+				}
 			}
 		</script>
 	</body>

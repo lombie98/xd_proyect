@@ -1,195 +1,194 @@
-	.desktop{
-		display: hidden;
+:root {
+  font-size: 62.5%;
+}
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 1.4rem;
+	color: #333333;
+  overflow-x: hidden;
+}
+header {
+	background-color: #333333;
+	padding: 1.5rem;
+	overflow: hidden;
+}
+header h1 {
+  font-size: 2.6rem;
+	color: #FFFFFF;
+	float: left;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+  background-size: contain;
+	padding-left: 6.5rem;
+  font-weight: 700;
+}
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .5rem;
+	display: block;
+}
+header a:hover {
+	background-color: #FFFFFF;
+	color: #333333;
+}
+nav {
+	float: right;
+}
+nav ul li {
+	display: inline-block;
+}
+img {
+	display: block;
+	width: 100%;
+}
+#noticias-destacadas {
+  width: calc(100vw * 3);
+  overflow: hidden;
+  animation: 15s slider infinite;
+  position: relative;
+}
+#noticias-destacadas figure {
+  float: left;
+  position: relative;
+  width: 100vw;
+}
+#noticias-destacadas figcaption { /* <-- busca al elemento con id="noticias-destacadas" */
+	background-color: #333333;
+	padding: 1.5rem;
+}
+#noticias-destacadas h2 {
+	color: #FFFFFF;
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+.noticia {
+	border-bottom: solid 1px #D9D9D9;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem;
+}
+.noticia:last-child {
+	border: none;
+}
+.noticia-img {
+	width: 30%;
+}
+.noticia-txt {
+	width: 65%
+}
+.noticia-txt h3 {
+	font-weight: 700;
+	font-size: 2.8rem;
+}
+.noticia-txt a {
+	text-decoration: none;
+	color: #000;
+}
+.noticia-txt p {
+	font-size: 16px;
+}
+.noticia-txt h3,
+.noticia-txt p {
+	line-height: 1.5;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#tabla-posiciones td,
+#tabla-posiciones th {
+	padding: 1.2rem;
+}
+#tabla-posiciones th {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-size: 2rem;
+	font-weight: 700;
+}
+#tabla-posiciones td {
+	background-color: #D9D9D9;
+	vertical-align: middle;
+}
+#tabla-posiciones tr {
+	border-bottom: solid 1px #999999;
+}
+#tabla-posiciones tr:first-child,
+#tabla-posiciones tr:last-child {
+	border: none;
+}
+#tabla-posiciones table {
+	width: 60rem;
+	margin: auto;
+}
+#tabla-posiciones td:nth-of-type(odd) {
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+}
+#tabla-posiciones td:nth-of-type(even) span {
+	font-weight: 700;
+	color: #008899;
+}
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 3rem;
+}
+/* Animaciones CSS */
+@keyframes slider {
+    0% { left: 0 }
+   20% { left: 0 }
+   40% { left: -100vw }
+   60% { left: -100vw }
+   80% { left: -200vw }
+  100% { left: -200vw }
+}
+/* Media Queries */
+@media screen and (max-width: 640px){
+	nav {
+		display: none;
+		float: none;
+		clear: both;
+		text-align: center;
 	}
-
-
-
-	.fa-1x {
-	font-size: 1.5rem;
-	}
-	.navbar-toggler.toggler-example {
-	cursor: pointer;
-	}
-	.dark-blue-text {
-	color: #0A38F5;
-	}
-	.dark-pink-text {
-	color: #AC003A;
-	}
-	.dark-amber-text {
-	color: #ff6f00;
-	}
-	.dark-teal-text {
-	color: #004d40;
-	}
-
-
-
-	h1{
-		margin:0;
-	}
-
-	body{
-		overflow-x: hidden;
-
-		font-family: arial;
-		font-size: 14px;
-		margin:0;
-		background-color: white;
-	}
-	a{
-		text-decoration:none;
-		color:black;
-	}
-
-	/*header a {
-		color:#bababa;
+	nav ul li {
 		display: block;
-		padding: 5px;
+		padding: .5rem;
 	}
-	header a:hover {
-		background-color: #bababa;
-		color:#171717;
-	}
-	header h1 {
-		margin:0;
-		color:#bababa;
-		float: left;
-		background-image: url(../img/logo.png);
-		background-repeat: no-repeat;
-		background-size:contain;
-		padding-left: 75px;
-		font-weight: 700;
-		font-size: 28px;
-	}
-
-	header ul {
-		padding: 0;
-		margin:0;}
-
-	header ul li{
-		display: inline-block;/*esta propiedad junta las dos mejores propiedades de inline y block, muestra una caja al lado de la otra*/
-	}
-/*
-	header nav{
+	button {
+		display: block;
 		float: right;
-	}*/
-
-	footer{
-		background-color: black;
+		border: none;
+		padding: .5rem;
+		font-size: 2rem;
+		line-height: 1;
+		font-weight: 700;
+		color: #FFFFFF;
+		background-color: transparent;
+		cursor: pointer;
 	}
-
-	img{
+  button:hover + nav,
+	button:focus + nav {
 		display: block;
+	}
+  #noticias-destacadas h2 {
+    font-size: 1.4rem;
+  }
+	.noticia {
+		flex-direction: column;
+	}
+	.noticia-img,
+	.noticia-txt {
 		width: 100%;
 	}
-	#noticia-destacada{
-		width: calc(100vw *3);
-		overflow: hidden;
-		background-color: #171717;
-		position: relative;
-		animation: 15s slider infinite;/*tiempo | nombre del animacion que quiero usar (keyframes) | como quiero que se repita*/
+  .noticia-txt h3 {
+    font-size: 1.8rem;
+  }
+	#tabla-posiciones table {
+		width: 90%;
 	}
-	#noticia-destacada figure{
-		width: 100vw;
-		float: left;
-	}
-	#noticia-destacada h2{
-		font-size:42px;
-		font-weight: 600;
-		background-color: #171717;
-		padding: 15px;
-		color: #fff;
-	}
-
-	.noticias{/*Contenedor flexible*/
-		display:flex;
-		flex-direction: row;
-		justify-content: space-evenly;/* flex-start/center/flex-end/space-arround/space-between/space-evenly*/
-		align-items: center;
-		border-bottom: solid 1px #cccccc;
-		margin-left:15px;
-		margin-right: 15px;
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-	.noticia-img{/*item flexible*/
-		width: 25%;	}
-
-	.noticia-txt {/*item flexible*/
-		width: 65%;
-		line-height: 1.5;
-
-	}
-
-	.noticia-txt h3 {
-		font-weight: 800;
-		font-size: 20px;
-					}
-
-	.noticia-txt a{
-		font-weight: 600;
-	}
-
-	.noticias:last-child {
-		border-bottom: none;
-	}
-
-	#tabla-posiciones table{
-		width: 80%;
-		margin:auto;
-	}
-	#tabla-posiciones td, #tabla-posiciones th{
-		padding: 15px;
-	}
-
-	#tabla-posiciones th{
-		font-weight: 800;
-		color:white;
-		background-color: red;
-		font-size: 20px;
-	}
-
-	#tabla-posiciones tr{
-		background-color: #d9d9d9;
-		border-top: solid 1px #cccccc;
-	}
-
-	#tabla-posiciones tr:last-child{
-		border-bottom:  none;
-	}
-
-	#tabla-posiciones td{
-		vertical-align: middle;
-	}
-	#tabla-posiciones td:nth-child(odd) {
-		text-align: center;
-		font-size:18px;
-		font-weight: 500;
-	}
-	#tabla-posiciones span{
-		color:#009a8a;
-		font-weight: 600;
-	}
-	/*animaciones css*/
-	@keyframes slider{
-		0%{
-			left:0;
-		}
-		20%{
-			left: 0;
-		}
-		40%{
-			left: -100vw;
-		}
-		60%{
-			left:-100vw;
-		}
-		80%{
-			left:-200vw;
-		}
-		100%{
-			left:0;
-		}
-
-	}
+}

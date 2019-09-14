@@ -234,6 +234,18 @@
 		<script src="js/jquery-3.3.1.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+			//XMLHttpRequest es para crear un objeto tipo socket
+			var ajax = new XMLHttpRequest()
+			//creo la comunicacion entre que quiero hacer (get: tomar los datos de donde esten en formato json|| post: eviar los datos en formato json a algun lado )
+			ajax.open("GET", "noticias.json")
+			//leo de la comunicacion entre el documento json con la funcuion ".onload" 
+			ajax.onload = function (){
+				//muersto lo ue levanto con la funcion ".response"
+				console.log(ajax.response)
+			}
+			//ajax.send()
+		</script>
 	</body>
 
 </html>

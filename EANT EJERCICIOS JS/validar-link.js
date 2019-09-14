@@ -1,3 +1,5 @@
+
+
 links=document.querySelectorAll("nav > a") //indica que el elemento a tiene que ser hijo del nav ::: ejemplo generico padre > hijos
 
 links.forEach( funtion (link) { 
